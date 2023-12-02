@@ -13,6 +13,19 @@ def hello():
 
 
 def play_game():
+    """
+    Play a game of rock-paper-scissors against the computer.
+
+    The function prompts the user to enter their choice (rock, paper, or scissors),
+    generates a random choice for the computer, and determines the winner based on
+    the game rules. The result is printed to the console.
+
+    Parameters:
+    None
+
+    Returns:
+    None
+    """
     choices = ["rock", "paper", "scissors"]
     computer_choice = random.choice(choices)
     user_choice = input("Enter your choice (rock/paper/scissors): ").lower()
